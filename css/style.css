@@ -277,8 +277,37 @@ i.fa-solid.fa-info {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+.activites {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
 
+.activites-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 439px;
+    width: 297.5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.activites-cards img {
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
