@@ -16,7 +16,10 @@
 }
 
 
-
+body {
+    max-width: 1440px;
+    margin: auto;
+}
 
 
 main {
@@ -72,6 +75,7 @@ button {
 
 h1 {
     font-weight: bold;
+    padding-bottom: 8px;
 }
 
 /****** Header ***********/
@@ -153,9 +157,14 @@ i.fa-solid.fa-location-dot {
     font-size: 18px;
 }
 
+button.btn-mobile {
+    display: none;
+}
+
 input#search {
     border: none;
     flex: 1;
+    padding: 10px;
 }
 
 .filtres {
@@ -228,7 +237,7 @@ i.fa-solid.fa-info {
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 33px;
     gap: 30px;
     justify-content: center;
@@ -436,6 +445,15 @@ i.fa-solid.fa-info {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards .card {
+        height: 270px;
+     }
+
+     .activites-cards img {
+        height: 200px;
+        
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -481,8 +499,6 @@ i.fa-solid.fa-info {
     .categorie {
         margin: 40px;
         padding-top: 0px;
-        
-        
     }
 
     .categorie:hover {
@@ -495,6 +511,23 @@ i.fa-solid.fa-info {
 
     
 /* Recherche filtres */
+
+    button.btn-rechercher {
+        display: none;
+    }
+
+    .recherche button {
+        width: 49px;
+        border-radius: 15px;
+    }
+
+    button.btn-mobile {
+        display: flex;
+    }
+
+    .btn-mobile .fa-solid  {
+        color: #FFFFFF;
+    }
 
     h1 {
         font-size: 22px;
